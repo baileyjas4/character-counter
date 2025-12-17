@@ -1,5 +1,8 @@
 // components/StatsDisplay/StatsDisplay.tsx
 import React from 'react';
+import "../../App.css";
+
+
 import { StatsDisplayProps } from '../../types';
 
 export const StatsDisplay: React.FC<StatsDisplayProps> = ({

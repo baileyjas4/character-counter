@@ -34,7 +34,7 @@ function App() {
 
 
   return (
-    <div className=''>
+    <div className='text-3xl font-bold underline'>
       <StatsDisplay stats={stats}></StatsDisplay>
      <TextInput onTextChange={handleTextChange} />
     </div>
