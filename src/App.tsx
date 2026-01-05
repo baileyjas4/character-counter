@@ -1,8 +1,5 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-import { CharacterCounter } from './components/CharacterCounter/CharacterCounter'
 import { StatsDisplay } from './components/StatsDisplay/StatsDisplay'
 import { TextInput } from './components/TextInput/TextInput'
 import { TextStats } from './types'
@@ -23,7 +20,7 @@ function App() {
     const wordCount = 
     value.trim() === "" ? 0 : value.trim().split(/\s+/).length;
     const readingTime = (wordCount / 200) * 60; // 200 wpm
-    setWords(value);
+    setWords(words);
     setStats({
       characterCount: value.length,
       wordCount,
